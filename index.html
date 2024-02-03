@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
+
 </head>
 <body>
     
@@ -21,11 +22,9 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+       
                   <div class="counter">
-            <!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-    <img src="https://hitwebcounter.com/counter/counter.php?page=11163149&style=0001&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>                                    
-        </div>
+           
             <div id="menu-icon" class="bx bx-menu"></div>
         </header>
 
@@ -48,7 +47,7 @@
             <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
             <a href="https://instagram.com"><i class='bx bxl-instagram'></i></a>
             
-        </div>
+      </div>
        
     </div>
 
@@ -243,7 +242,8 @@
         </div>
     </div>
 </div>
- 
+</section>
+
 <script src="script.js">
 
 </script>
@@ -258,6 +258,26 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("testimonial");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.transform = `translateX(${(i - slideIndex) * 100}%)`;
+        }
+        slideIndex++;
+        if (slideIndex >= slides.length) { slideIndex = 0; }
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+
+    function moveSlider(direction) {
+        slideIndex += direction;
+        showSlides();
+    }
+</script>
+
 </body>
 </html>
 
