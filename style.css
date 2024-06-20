@@ -230,15 +230,7 @@ section{
     grid-gap: 2em;
     background: black;
 }
-.about{
-    height: 100vh;
-    background: url('img37.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
-}
+
 .about-content h2{
   
     font-weight: 40px;
@@ -298,16 +290,7 @@ section{
 .tab-contents.active-tab{
     display: block;
 }
-.skills{
-    height: 100vh;
-    background: url('img37.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
-       
-    }
+
 
 .skill-main{
        width: 100%;
@@ -414,15 +397,7 @@ section{
     margin-bottom: 2rem;
     color: var(--hover-color);
 }
-.services{
-    height: 100vh;
-    background: url('img37.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
-}
+
 
 .main-text1 h2{
   
@@ -487,15 +462,6 @@ section{
 .service-box h3{
     margin-top: 5px;
     font-size: 1.5rem;
-}
-.contact{
-    height: 100vh;
-    background: url('img37.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
 }
 
 .contact-left{
